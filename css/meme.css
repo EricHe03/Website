@@ -1,0 +1,27 @@
+/* Small usability overrides; the original Colorlib layout stays intact. */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #ffbd39;
+  outline-offset: 4px;
+}
+.ftco-animate { opacity: 1; visibility: visible; }
+.home-slider:not(.owl-loaded) { display: block; }
+.home-slider:not(.owl-loaded) .slider-item + .slider-item { margin-top: 2rem; }
+.owl-carousel.home-slider .slider-item,
+.owl-carousel.home-slider .slider-item .slider-text { height: max(650px, 100svh); }
+.owl-carousel.home-slider .slider-item .slider-text .one-third { height: 100% !important; }
+.owl-carousel.home-slider .slider-item .slider-text .one-forth { max-width: 100%; }
+.skill-caption { font-size: .85rem; margin-bottom: 2.5rem; }
+.progress-bar[aria-valuenow="0"] span { left: 0; right: auto; }
+.contact-form label, #void-note, #void-feedback, .contact-form noscript { color: #333; }
+.contact-form .btn { white-space: normal; }
+@media (max-width: 575.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text h1 { font-size: clamp(30px, 8vw, 40px); }
+  .owl-carousel.home-slider .slider-item .slider-text h2 { font-size: 24px; }
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth { padding: 5rem 1rem 3rem; }
+  .about-info li { flex-wrap: wrap; }
+  .btn { white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  [data-scrollax] { transform: none !important; }
+}
