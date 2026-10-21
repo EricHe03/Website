@@ -20,6 +20,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-size: contain;
 }
 #projects-section .project .text { position: absolute; }
+#projects-section .project-icon-heading { margin: 0 0 .75rem; line-height: 1; }
+#projects-section .project-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+}
+#projects-section .project-icon { display: block; width: 40px; height: 40px; }
+#projects-section .project:focus-within .overlay { opacity: .9; }
+#projects-section .project:focus-within .text { opacity: 1; }
 .skill-caption { font-size: .85rem; margin-bottom: 2.5rem; }
 .progress-bar[aria-valuenow="0"] span { left: 0; right: auto; }
 .contact-form label, #void-note, #void-feedback, .contact-form noscript { color: #333; }
