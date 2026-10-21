@@ -13,6 +13,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* Keep the banner clickable without covering the overlapping counter cards. */
 .ftco-hireme { z-index: 0; }
 #section-counter { z-index: 1; }
+/* Match the project screenshots' 16:10 proportions at every screen size. */
+#projects-section .project {
+  height: auto;
+  aspect-ratio: 16 / 10;
+  background-size: contain;
+}
+#projects-section .project .text { position: absolute; }
 .skill-caption { font-size: .85rem; margin-bottom: 2.5rem; }
 .progress-bar[aria-valuenow="0"] span { left: 0; right: auto; }
 .contact-form label, #void-note, #void-feedback, .contact-form noscript { color: #333; }
